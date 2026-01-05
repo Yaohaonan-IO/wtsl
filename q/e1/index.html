@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五台山精品小团</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 免责确认弹窗 -->
+    <div id="disclaimer-popup" class="disclaimer-popup">
+        <div class="disclaimer-overlay"></div>
+        <div class="disclaimer-content">
+            <h2 class="disclaimer-title">线上报名免责确认</h2>
+            
+            <div class="disclaimer-terms">
+                <ol>
+                    <li>本人确认身体健康，无心脏病、高血压、哮喘等不适宜登山徒步的疾病，因隐瞒健康状况引发的意外，责任自负。</li>
+                    <li>本人承诺遵守导游安排，擅自离队导致的人身财产损失，与组织方无关。</li>
+                    <li>个人财物自行妥善保管，因自身疏忽造成的丢失或损坏，组织方不承担赔偿责任。</li>
+                    <li>行程遇自然灾害、交通管制等不可抗力，组织方可调整行程，产生的额外费用由本人承担。</li>
+                    <li>本人尊重五台山宗教习俗及当地民风，因个人不当行为引发的纠纷，责任自负。</li>
+                    <li>本行程属于私人小客车合乘（顺风车），为顺路互助、分摊部分出行成本的民事行为，非经营性运输服务，司机与乘客之间无承运合同关系，司机仅提供闲置座位共享。</li>
+                    <li>乘客自愿搭乘，需自行系好安全带，不得干扰驾驶（如随意指挥路线、抢夺方向盘等），因乘客自身过错（如未系安全带、擅自开窗抛物等）导致的人身或财产损失，司机不承担责任。</li>
+                    <li>乘客个人财物（如手机、行李等）由自身妥善保管，行程中发生遗失、损坏的，司机无赔偿义务。</li>
+                    <li>因不可抗力（如自然灾害、交通管制）、第三方侵权（如其他车辆肇事）或车辆突发故障等非司机主观过错导致的意外，司机仅协助处理相关事宜，不承担赔偿责任，相关损失由责任方或保险公司按规定赔付。</li>
+                    <li>乘客不得携带违禁品、危险品或超员乘车，若违反规定引发后果，由乘客自行承担全部责任，司机有权拒绝搭乘并终止行程。</li>
+                    <li>点击“确认”即视为已阅读并同意以上全部条款</li>
+                </ol>
+            </div>
+            
+            <div class="disclaimer-agree">
+                <input type="checkbox" id="agree-checkbox" class="agree-checkbox"><label for="agree-checkbox" class="agree-label">我已仔细阅读并同意以上所有条款</label>
+            </div>
+            
+            <button id="confirm-button" class="confirm-button" disabled>确认</button>
+        </div>
+    </div>
+    
+    <header class="header">
+        <h1 class="logo">五台山精品小团</h1>
+        <nav class="nav">
+            <a href="#information" class="nav-link"><span>信息差</span></a>
+            <a href="#price" class="nav-link"><span>价格明细</span></a>
+            <a href="#transport" class="nav-link"><span>接驳方式</span></a>
+            <a href="#risks" class="nav-link"><span>核心风险</span></a>
+            <a href="#contact" class="nav-link"><span>联系我们</span></a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="overview" class="section scroll-animate">
+            <h2 class="section-title">景区介绍</h2>
+            <div class="content">
+                <p>五台山位于中国山西省忻州市，跨五台县、繁峙县等区域，是世界文化遗产、中国佛教四大名山之一、国家AAAAA级旅游景区。因有五座顶似平台的山峰而得名，主峰为北台叶斗峰，海拔3061.1米，山西省最高峰，华北地区最高峰。</p>
+            </div>
+        </section>
+
+        <section id="services" class="section scroll-animate delay-1">
+            <h2 class="section-title">服务内容</h2>
+            <div class="content">
+                <ol>
+                    <li>交通服务：阜平→鸿门岩 鸿门岩→阜平 接送</li>
+                    <li>徒步路线：带大家一起走往返北台的一日徒步路线（约7-9h）</li>
+                    <li>指导服务：为游客提供基本的路线指引（部分地区无信号，小白有迷路风险）与专业指导</li>
+                    <li>物资赠送：赠送户外必要物资</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="information" class="section scroll-animate delay-2">
+            <h2 class="section-title">信息差</h2>
+            <div class="content">
+                <p class="truth-statement">信息差里藏门道，避坑全靠早知道</p>
+                <h3>为什么要去鸿门岩？</h3>
+                <p>鸿门岩是是朝台人约定俗成的五台山徒步起点，海拔2500m，可以免费停车，有食宿，有少量摊贩，鸿门岩距离东台顶2km，距离北台顶9km。</p>
+                <h3>为什么选择鸿门岩往返北台路线？</h3>
+                <p>考虑到大部分顾客只有一天的游玩时间，此路线耗时7~9h，适合一日游，北台顶海拔3061m，是五台山最高处，是山西省最高峰，是华北地区最高峰，徒步登顶更有意义。</p>
+                <h3>为什么不进景区？</h3>
+                <p>只有山脚下的台怀镇是景区收费范围，台怀镇有各种寺庙，但是我们是要上山欣赏风景，山顶和山脚是两码事，去山顶不需要收费，但由于景区的普适性，高德把会把路径自动引入景区，去台顶的路线大部分人不搜攻略都找不到。</p>
+                <p>如果误入景区却仍要登顶，景区官方将对每位游客收取高昂的费用！</p>
+                <p>五台山景区内的门票全票120元/人，朝台车票：朝台车票有单台和大朝台之分，东台、南台60元/人，北台70元/人，中台、西台80元/人，大朝台350元/人。景区交通票：景区环保车50元/人，与进山费联票出售，无论是否乘坐都必须购买！</p>
+                <p>我们把车开上鸿门岩停车场，可以跳过景区多次收取门票与朝台票的过程。可以直接上山，更节省时间，把车开上海拔2500m的山腰，人少不心烦，使游客全程接触大自然。</p>
+
+                <h3>在保定市阜平县集散对顾客有何优势？</h3>
+
+                <p>游客从河北出发去五台山，阜平县是必经之地。五台山周围城市很少，阜平县城距离五台山很近，阜平县具有完善的基础生活配套，大家在阜平县集散，能有效减轻各地游客的疲劳感，对于河北各地游客来说都是很好的选择。</p>
+
+                <h4>以下是距离鸿门岩近的所有县/市</h4>
+                <ol class="distance-list">
+                    <li>山西忻州市繁峙县：1h10min</li>
+                    <li>山西忻州市代县：1h45min</li>
+                    <li>山西大同市灵丘县：1h40min</li>
+                    <li>河北保定市阜平县：2h30min</li>
+                    <li>山西忻州市五台县：2h40min</li>
+                    <li>山西忻州市区：3h</li>
+                </ol>
+
+                <p class="highlight-conclusion">因此我们将保定市阜平县作为集散点</p>
+
+                <h3>为什么车程这么长？</h3>
+                <p class="poetic-conclusion"><span>不费脚力无绝色，人稀之地藏风光。</span></p>
+                <ul class="transport-list">
+                <p>地理因素：五台山身处太行山脉中心地带，距离城市路程较远。</p>
+                <p>人为因素：本团不进景区，因此我们的行车路线绕过景区，增加了半小时的车程，但我们能够直接上山。总体来说，我们到达山顶比进常规景区的游客上山更快。</p>
+                </ul>
+
+
+
+                <h3>为什么不坐火车？</h3>
+                <p>繁峙火车站与五台山火车站均办理客运业务，但是该铁路线只连接山西省南北，河北人去到五台山火车站要→石家庄站→太原→五台山站，且五台山站一天只停两趟办客列车，出行十分依赖铁路时刻表，五台山站出站后再找拼车，还要再坐拼车40分钟才能到徒步起点，当地司机比较黑，送到山上单程价格至少50元，如依赖铁路出行五台山，总体来看价格更高且耗时更长</p>
+            </div>
+        </section>
+
+        <section id="price" class="section scroll-animate delay-3">
+            <h2 class="section-title">价格明细</h2>
+            <div class="content">
+                <div class="contact-notice">
+                    请至少提前3天开始预定
+                </div>
+                <div class="price-cards">
+                    <div class="price-card scroll-animate-scale">
+                        <h3 class="highlight-text">
+                            阜平县发车    极速上山
+                            <span class="excited-emoji">
+                                <img src="https://cdn.jsdelivr.net/npm/openmoji@15.1.0/color/svg/1F929.svg" alt="期待" style="width: 1em; height: 1em; vertical-align: -0.1em; margin-left: 0.2em;">
+                            </span>
+                        </h3>
+                        <div class="price-options">
+                            <div class="price-option">
+                                <span class="passenger-count">后排三人</span>
+                                <span class="price highlight-price">139元/人</span>
+                            </div>
+                            <div class="price-option">
+                                <span class="passenger-count">后排两人</span>
+                                <span class="price highlight-price">179元/人</span>
+                            </div>
+                        </div>
+                        <p class="distance">阜平县发车 单程约2.5h，</p>
+                        <p class="time-notice">请合理安排时间。</p>
+                    </div>
+                </div>
+
+                <p class="notice">顾客付款24小时后，订单锁定，无法退单</p>
+
+                <div class="supplies">
+                    <h3>温馨提示</h3>
+                    <p>对于已经预定下单的游客，无需单独购买景区门票，本人额外提供价值50元的必要物资且承诺不二次收取费用。</p>
+                    <h4>以下为免费提供物资</h4>
+                    <table class="supplies-table">
+                        <tr>
+                            <th>装备</th>
+                            <th>价格</th>
+                            <th>用途</th>
+                        </tr>
+                        <tr>
+                            <td>能量胶</td>
+                            <td>5元/支</td>
+                            <td>快速补充能量</td>
+                        </tr>
+                        <tr>
+                            <td>盐丸</td>
+                            <td>3元/袋</td>
+                            <td>防肌肉抽筋</td>
+                        </tr>
+                        <tr>
+                            <td>葡萄糖</td>
+                            <td>2元/支</td>
+                            <td>防止低血糖</td>
+                        </tr>
+                        <tr>
+                            <td>雨衣</td>
+                            <td>6元/件</td>
+                            <td>防失温</td>
+                        </tr>
+                        <tr>
+                            <td>保温毯</td>
+                            <td>2元/条</td>
+                            <td>紧急保暖</td>
+                        </tr>
+                        <tr>
+                            <td>登山杖</td>
+                            <td>28元/根</td>
+                            <td>辅助登山</td>
+                        </tr>
+                        <tr>
+                            <td>水</td>
+                            <td>2元/瓶</td>
+                            <td>补充水分</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="transport" class="section scroll-animate delay-4">
+            <h2 class="section-title">接驳方式</h2>
+            <div class="content">
+
+            <h3>游客应如何到达阜平县？</h3>
+                <ul class="transfer-list">
+                    <li>保定→阜平：可以在滴滴出行平台上预约45元拼车到阜平（高速） 耗时约2h</li>
+                    <li>石家庄→阜平：加我微信给你推一个40元班车群（高速） 耗时约2h</li>
+                    <li>定州→阜平：去定州汽车站 保运集团的26元客运班车（国道） 耗时约2h</li>
+                </ul>
+            <p class="poetic-conclusion"><span>不费脚力无绝色，人稀之地藏风光。</span></p>
+            </div>
+        </section>
+
+        <section id="risks" class="section scroll-animate">
+            <h2 class="section-title">核心风险与安全建议</h2>
+            <div class="content">
+                <div class="risks">
+                    <h3>核心风险</h3>
+                    <ul>
+                        <li>天气多变：五台山气候复杂多变，台顶温差大，容易出现突发恶劣天气</li>
+                        <li>通讯不良：部分区域手机信号弱或无信号，需提前做好沟通</li>
+                        <li>体力消耗：朝台行程较长，对体力要求较高，需合理安排休息</li>
+                    </ul>
+
+                    <h3>安全建议</h3>
+                    <ul>
+                        <li>提前了解天气预报，携带防风、防雨、保暖衣物</li>
+                        <li>至少携带一个满电充电宝</li>
+                        <li>根据自身体力量力而行，身体不适及时停止</li>
+                    </ul>
+
+                    <p class="commitment">全程相伴，绝不弃客</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section scroll-animate">
+            <h2 class="section-title">联系方式</h2>
+            <div class="content">
+                <div class="contact-container">
+                    <div class="contact-card wechat-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178A1.17 1.17 0 014.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178 1.17 1.17 0 01-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 01.598.082l1.584.926a.272.272 0 00.14.045c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 01-.023-.156.49.49 0 01.201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.269-.03-.407-.032zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.969-.982z"/>
+                            </svg>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title platform-name">微信</h3>
+                            <p class="card-account">15831037207</p>
+                        </div>
+                        <div class="card-bg-effect"></div>
+                    </div>
+                    <div class="contact-card douyin-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                            </svg>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title platform-name">抖音</h3>
+                            <p class="card-account">yhn55999</p>
+                        </div>
+                        <div class="card-bg-effect"></div>
+                    </div>
+                </div>
+                <p class="contact-poetic">知你所求 同揽五台云卷悠</p>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <p>© Lecture文化集团氧化钠   ---   保留所有权利 </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
